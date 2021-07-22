@@ -18,6 +18,7 @@ namespace API.Controllers.Extensions
                             IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"])),
                             ValidateAudience = false,
                             ValidateIssuer = false
+                            
                         };
                     });
               return services;
